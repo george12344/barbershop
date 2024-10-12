@@ -1,0 +1,91 @@
+/* src/components/AboutUs/AboutUs.css */
+.about-us {
+  display: flex;
+  flex-direction: row;
+  align-items: stretch; /* Αλλαγή από center σε stretch για να καλύπτουν το ύψος */
+  padding: 0; /* Καταργούμε το padding */
+  background-color: #f9f9f9; /* Χρώμα φόντου */
+}
+
+.columna {
+    flex: 1 1;
+    text-align: left;
+}
+.image-column {
+  position: relative; /* Χρειάζεται για την τοποθέτηση της εικόνας */
+}
+
+.image-column img {
+  width: 100%; /* Η εικόνα καταλαμβάνει το 100% του πλάτους */
+  height: 680px; /* Ρυθμίζουμε το ύψος της εικόνας */
+  object-fit: cover; /* Καλύπτει το πλαίσιο της εικόνας */
+  opacity: 0.7; /* Διαφάνεια της εικόνας */
+}
+
+.box-in-about {
+    width: 70%;
+    margin: auto;
+}
+
+h2 {
+  font-size: 2rem; /* Μέγεθος τίτλου */
+  color: #333; /* Χρώμα τίτλου */
+  margin: 0; /* Καταργούμε το margin */
+  border-bottom: 2px solid #d5a353; /* Γραμμή κάτω από τον τίτλο */
+  padding-bottom: 10px; /* Απόσταση κάτω από τη γραμμή */
+}
+
+p {
+  font-size: 1rem; /* Μέγεθος κειμένου */
+  color: #666; /* Χρώμα κειμένου */
+  margin-top: 10px; /* Απόσταση πάνω από τον τίτλο */
+  line-height: 1.6; /* Αυξάνουμε το line height */
+}
+.columna.text-column h2 {
+    font-size: 5rem;
+}
+p.abp {
+    margin-bottom: 0;
+    color: #d5a353!important;
+}
+.columna.text-column p {
+    margin-top: 150px;
+    color: black;
+    width: 80%;
+}
+.box-in-about {
+    margin-top: 150px;
+}
+/* Responsive Styles */
+@media (max-width: 768px) {
+  .about-us {
+    flex-direction: column; /* Στήλες σε κάθετες γραμμές σε μικρές οθόνες */
+  }
+  .columna.text-column h2 {
+    font-size: 3rem;
+}
+.box-in-about {
+    margin-top: 50px;
+}
+.columna.text-column p {
+    margin-top: 150px;
+    color: black;
+    width: 100%;
+}
+  .text-column {
+    padding: 20px 0; /* Παράθυρο μόνο πάνω και κάτω */
+    height: auto; /* Αυτόματη ρύθμιση ύψους σε κινητές συσκευές */
+  }
+  .box-in-about {
+    width: 95%;
+    margin: auto;
+}
+.columna.text-column p {
+    margin-top: 25px;
+}
+.image-column img {
+   
+    height: 320px;
+   
+}
+}

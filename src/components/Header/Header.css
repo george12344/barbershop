@@ -1,0 +1,219 @@
+.header-container {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  background-image: url('/public/assets/images/Retailer_Cavallie-Barber-640x427.jpg');
+  background-size: cover;
+  background-position: center;
+  font-family: Helvetica Neue, Helvetica;
+}
+
+.header-container::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(41, 36, 22, 0.7);
+  z-index: 1;
+}
+
+.navbar {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  max-width: 95%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 40px;
+  z-index: 2;
+  background: none;
+  margin: 0 auto;
+}
+
+.logo img {
+  height: 150px;
+  margin-top: 30px;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+.nav-links li {
+  font-size: 1rem;
+}
+
+.nav-links a {
+  color: #d5a353;
+  text-decoration: none;
+}
+
+.nav-links a:hover,
+.nav-links a:active {
+  text-decoration: underline;
+}
+
+.header-content {
+position: absolute;
+top: 50%;
+left: 50%;
+transform: translate(-50%, -50%);
+text-align: center;
+z-index: 1;
+}
+.main-title {
+  color: #d5a353;
+  font-size: 1.5rem;
+  margin: 0;
+  padding: 0 40px;
+}
+
+img.scissors-icon {
+  width: 60px!important;
+  padding: 0 30px;
+}
+
+h1.main-title {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.secondary-title {
+  color: #d5a353;
+  font-size: 6rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  margin: 0;
+  padding: 0px 50px;
+}
+
+.since {
+  color: white;
+  font-size: 1.2rem;
+}
+
+.columns {
+  display: flex;
+  border-top: 1px solid gray;
+  position: relative;
+  top: 60%;
+  height: 115px;
+  z-index: 1;
+}
+
+.column {
+  flex: 1;
+  padding: 20px;
+  border-right: 1px solid gray;
+  text-align: center;
+}
+
+.last-column {
+  border-right: none;
+}
+
+img.scissors-icon {
+  width: 30px;
+}
+
+label#koureio {
+  color: #d5a353;
+  font-size: 2rem;
+  padding: 0 15px;
+}
+
+p.txt_hd {
+  width: 42%;
+  margin: auto;
+  color: white;
+  font-size: 1.4rem;
+  margin-top: 50px;
+  line-height: 30px;
+}
+
+button.mk_app {
+  width: 300px;
+  padding: 20px;
+  font-size: 1.5rem;
+  background: #d5a353;
+  margin-top: 30px;
+}
+
+h3.cl_hd {
+  color: #d5a353;
+  font-size: 1.2rem;
+}
+
+.column label {
+  color: white;
+}
+
+.column.td {
+  border-right: none;
+}
+
+@media (max-width: 768px) {
+  .header-content {
+    position: absolute;
+    top: 55%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    z-index: 1;
+}
+
+.header-container {
+  position: relative;
+  width: 100%;
+  height: 63vh;
+}
+
+img.scissors-icon {
+  width: 35px !important;
+  padding: 0 24px;
+}
+p.txt_hd {
+  margin-top: 0;
+}
+
+button.mk_app {
+  margin-top: 10px;
+}
+
+h1.main-title {
+  font-size: 0.5rem;
+}
+
+h2.secondary-title {
+  font-size: 2.6rem;
+}
+
+p.since {
+  font-size: 0.7rem;
+}
+
+label#koureio {
+  font-size: 0.5rem;
+}
+
+p.txt_hd {
+  width: 90%;
+  font-size: 1rem;
+}
+
+button.mk_app {
+  padding: 10px;
+  font-size: 1rem;
+}
+
+.columns {
+display: none;
+}
+
+}

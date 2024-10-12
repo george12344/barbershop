@@ -1,0 +1,114 @@
+/* src/components/Nav/Nav.css */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 40px;
+  background: none;
+  position: relative;
+}
+
+.logo img {
+  height: 150px;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 30px;
+}
+
+.nav-links li {
+  font-size: 1rem;
+  border-bottom:1px solid white;
+}
+
+.nav-links a {
+  color: #d5a353; /* Αρχικό χρώμα κειμένου */
+  text-decoration: none;
+  
+}
+
+.nav-links a:hover,
+.nav-links a:active {
+  text-decoration: underline;
+}
+
+.menu-toggle {
+  display: none; /* Κρυφό σε μεγαλύτερες οθόνες */
+  flex-direction: column;
+  cursor: pointer;
+}
+
+.menu-toggle .bar {
+  height: 3px;
+  width: 25px;
+  background-color: #d5a353;
+  margin: 4px 0;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  .navbar{
+    padding: 0 0;
+    width: 90%;
+  
+  }
+  nav.navbar {
+    width: 90%;
+    margin: auto;
+}
+  .logo img {
+    height: 100px;
+}
+
+.nav-links {
+  display: none;
+  flex-direction: column;
+  position: absolute;
+  top: 100%;
+  width: 98vw;
+  background-color: #d5a353;
+  z-index: 10;
+  padding: 0;
+  left: 0;
+}
+
+  .nav-links.open {
+    display: flex; /* Εμφάνιση όταν το menu είναι ανοιχτό */
+  }
+  ul.nav-links.open {
+    width: 93vw;
+    overflow: hidden;
+}
+  .nav-links.open li {
+    color: white; /* Χρώμα κειμένου για τα στοιχεία του μενού */
+  }
+
+  .nav-links.open a {
+    color: white; /* Ρύθμιση του χρώματος των συνδέσμων σε λευκό */
+  }
+  ul.nav-links.open {
+    width: 100%;
+    overflow: hidden;
+    height: auto;
+    padding: 50px 0;
+}
+
+  .menu-toggle {
+    display: flex; /* Εμφάνιση του hamburger menu */
+  }
+  
+  nav.navbar {
+    width: 100%; /* Βεβαιωθείτε ότι το navbar καλύπτει το 100% του πλάτους */
+  }
+
+  ul.nav-links.open {
+    width: 95vw; /* Χρησιμοποιήστε 100vw για να καλύψει το πλάτος της οθόνης */
+    overflow: hidden; /* Αποφυγή ξεχειλίσματος */
+  }
+  .nav-links.open a {
+    color: white;
+    font-size: 1.8rem;
+}
+}
