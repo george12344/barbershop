@@ -4,7 +4,7 @@ import Nav from '../Nav/Nav';
 
 const Header = () => {
   return (
-    <header className="header-container">
+    <header data-aos="fade-up" className="header-container">
       <Nav/>
       <div className="header-content">
         <h1 className="main-title">

@@ -4,7 +4,7 @@ import './AboutUs.css';
 
 const AboutUs = () => {
   return (
-    <section className="about-us">
+     <section data-aos="fade-up" className="about-us">
       <div className="columna image-column">
         <img src="assets/images/about.jpg" alt="About Us" />
       </div>
@@ -14,7 +14,7 @@ const AboutUs = () => {
         <h2>Welcome</h2>
         <p className='abpc'>
           Το Κουρείο <strong>by Konstantinos</strong> είναι το κορυφαίο σημείο για τις ανάγκες
-          περιποίησης των μαλλιών σας. Είμαστε αφιερωμένοι στο να
+          περιποίησης των μαλλιών σας. Είμαστε αφοσιομένοι στο να
           παρέχουμε υψηλής ποιότητας υπηρεσίες και μια μοναδική εμπειρία
           περιποίησης σε κάθε πελάτη μας. Με έμπειρια  και
           μοντέρνες τεχνικές, προσφέρουμε υπηρεσίες που ανταγωνίζονται με τις

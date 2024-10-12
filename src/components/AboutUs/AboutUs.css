@@ -4,7 +4,7 @@
   flex-direction: row;
   align-items: stretch; /* Αλλαγή από center σε stretch για να καλύπτουν το ύψος */
   padding: 0; /* Καταργούμε το padding */
-  background-color: #f9f9f9; /* Χρώμα φόντου */
+  background-color: white; /* Χρώμα φόντου */
 }
 
 .columna {
@@ -49,7 +49,7 @@ p.abp {
     color: #d5a353!important;
 }
 .columna.text-column p {
-    margin-top: 150px;
+    margin-top: 35px;
     color: black;
     width: 80%;
 }
