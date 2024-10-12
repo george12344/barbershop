@@ -73,8 +73,8 @@ p.abp {
     width: 100%;
 }
   .text-column {
-    padding: 20px 0; /* Παράθυρο μόνο πάνω και κάτω */
-    height: auto; /* Αυτόματη ρύθμιση ύψους σε κινητές συσκευές */
+    padding: 20px 0; 
+    height: auto;
   }
   .box-in-about {
     width: 95%;
